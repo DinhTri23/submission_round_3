@@ -32,4 +32,4 @@ USER appuser
 
 # Define execution target. Running the container performs one
 # synchronization job and exits (exit code 0 on success).
-CMD ["python", "src/daily_sync.py"]
+CMD ["python", "src/main.py"]
