@@ -1,0 +1,6 @@
+requests
+markdownify
+python-dotenv
+pydantic
+openai>=1.50.0
+tiktoken

@@ -1,0 +1,26 @@
+# Environments & Virtual Machines
+venv/
+env/
+ENV/
+.venv/
+
+# Secrets & Configuration
+.env
+*.key
+config/assistant_id.txt
+config/vector_store_id.txt
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Temporary & Runtime Logs
+*.log
+*.tmp
+*.corrupt
+
+# Operating System Files
+.DS_Store
+Thumbs.db

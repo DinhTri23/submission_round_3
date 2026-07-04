@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.sample
+.git
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/
+config/
+*.log
+.pytest_cache/
+.DS_Store
+README.md

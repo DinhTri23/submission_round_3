@@ -1,0 +1,212 @@
+{
+  "53095698149011": {
+    "title": "Using the Japan Earthquake App",
+    "slug": "using-the-japan-earthquake-app",
+    "updated_at": "2026-07-02T14:16:18Z",
+    "sha256": "d5e18177b0285bccf09eabab06a1fbc14d58c908ddd43f9bd60ff5a3a51f38fb",
+    "file_id": "file-Et7t2ccEeJycBUPEk5WRxY"
+  },
+  "53028011485715": {
+    "title": "How to Display a Snowflake Dashboard with OptiSigns",
+    "slug": "how-to-display-a-snowflake-dashboard-with-optisigns",
+    "updated_at": "2026-07-01T21:59:22Z",
+    "sha256": "331c954de8dfba8bf669d060c6c50fcd6142cc3dff8d9d43f7352ba753a85ea4",
+    "file_id": "file-VRjTULWsBYAoxnow6uWpCD"
+  },
+  "52523606879251": {
+    "title": "OptiSigns Digital Signage App for Zoom \u2014 Adding, Using, and Removing the App",
+    "slug": "optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app",
+    "updated_at": "2026-06-11T22:24:43Z",
+    "sha256": "978e0b7af5384dbb3d1964de065f999b6086e6b825dd34d145318c67c8e22155",
+    "file_id": "file-M4irQQV5Ad7tUuL5NApxH2"
+  },
+  "52412502456083": {
+    "title": "Connect Google Meet Hardware to OptiSigns Digital Signage",
+    "slug": "connect-google-meet-hardware-to-optisigns-digital-signage",
+    "updated_at": "2026-06-15T19:14:07Z",
+    "sha256": "8b19a3d48c758de16aa80f2d7b1a6beb10d74142693d4dd4ea5dbf0345ca9331",
+    "file_id": "file-LtsSZ9oZo4ZydbCHdRkwnw"
+  },
+  "52350277262483": {
+    "title": "Connect Microsoft Teams Rooms to OptiSigns Digital Signage",
+    "slug": "connect-microsoft-teams-rooms-to-optisigns-digital-signage",
+    "updated_at": "2026-06-24T18:39:16Z",
+    "sha256": "eb9cd03842b0720ba88c0e78d4f6c12864908f87523ebc47f1a5cb67668e976b",
+    "file_id": "file-B9Hi2TTd2pc9rZ6dudauQB"
+  },
+  "52113036672403": {
+    "title": "Room Integrations: Turn Your Meeting Rooms into Digital Signage",
+    "slug": "room-integrations-turn-your-meeting-rooms-into-digital-signage",
+    "updated_at": "2026-06-15T19:14:16Z",
+    "sha256": "ebdc481e584110d438a2dea1675d51bbe5b8c489bc1ddb28f717091264141354",
+    "file_id": "file-Xk8ZXoensnaqFDsEJRHWLG"
+  },
+  "52069065128723": {
+    "title": "Connect Zoom Rooms to OptiSigns Digital Signage",
+    "slug": "connect-zoom-rooms-to-optisigns-digital-signage",
+    "updated_at": "2026-06-11T22:22:00Z",
+    "sha256": "d1d1834703729b6464494b617dd7d699fb0ae3b1e3a083c1704c0ce57dcd1ca7",
+    "file_id": "file-7T8vT6q7RuBRhr87AcfGRJ"
+  },
+  "51343184586643": {
+    "title": "Connect Cisco Webex Rooms to OptiSigns Digital Signage",
+    "slug": "connect-cisco-webex-rooms-to-optisigns-digital-signage",
+    "updated_at": "2026-07-01T16:55:46Z",
+    "sha256": "6e5e3390b3bf52c3c8712bfaa772aaa5cdd23f5cccacd2a77fe72f2c8ec0b150",
+    "file_id": "file-QZh9HTGAqhTqfGXcrwumtx"
+  },
+  "49039295567891": {
+    "title": "ChromeOS PWA Instructions",
+    "slug": "chromeos-pwa-instructions",
+    "updated_at": "2026-05-05T15:48:27Z",
+    "sha256": "8f04eea5ab3edd872d0133518fb8069714627c1adee0bee9d3a7b63ae2cb40b3",
+    "file_id": "file-PhE5ZVfEDudSLrZnuaG4Ni"
+  },
+  "48751096814995": {
+    "title": "How to Use the Google Ads Dashboard App",
+    "slug": "how-to-use-the-google-ads-dashboard-app",
+    "updated_at": "2026-02-02T17:54:16Z",
+    "sha256": "0a8010a5f9008624add0c9a9185749b68c08df8f71e1bc750f73faeeb9a5c206",
+    "file_id": "file-W77Vw3feoW1Q4mbS9dRt3m"
+  },
+  "48656950622227": {
+    "title": "How to Use the Google Search Console App",
+    "slug": "how-to-use-the-google-search-console-app",
+    "updated_at": "2026-02-02T17:56:42Z",
+    "sha256": "1708b3b6f70faf9c95c53cca0bd53ee28c95cfab51d940a13717a440dae14889",
+    "file_id": "file-7UwEZobEo9TVqW4gEqGKbq"
+  },
+  "48626115821459": {
+    "title": "How to Use the YouTube Dashboard App",
+    "slug": "how-to-use-the-youtube-dashboard-app",
+    "updated_at": "2026-02-02T15:32:55Z",
+    "sha256": "6a6b8cbac5dd878b6d5c29f5a269962a1eaf6b23021fe1caa1978c5fae0c07dd",
+    "file_id": "file-5WXarzyJRmVJV9oRfBe3SZ"
+  },
+  "48241081473043": {
+    "title": "Operational Schedule Troubleshooting",
+    "slug": "operational-schedule-troubleshooting",
+    "updated_at": "2026-04-20T21:26:17Z",
+    "sha256": "542d335756283c204a89511784eaa4c764daa48b1afd25e7facfd3f62789b573",
+    "file_id": "file-7umbQk5YSNva56n85Umiu7"
+  },
+  "47616485609491": {
+    "title": "How to Use the OptiDev App",
+    "slug": "how-to-use-the-optidev-app",
+    "updated_at": "2026-02-11T23:03:49Z",
+    "sha256": "9f01307e69d29c3d583f6a625e921ab03ae6dc5e26fd4072ccfabe1b318cee13",
+    "file_id": "file-Cvj155VNrfzwgWXRrUwiF6"
+  },
+  "45619214182803": {
+    "title": "How to Set Up an Outlook Calendar App with Shared Permissions",
+    "slug": "how-to-set-up-an-outlook-calendar-app-with-shared-permissions",
+    "updated_at": "2025-10-17T16:01:18Z",
+    "sha256": "6223cc9105d001c4e8865ac63d193e4e29726144cfb78b4d6b293913065f72b4",
+    "file_id": "file-1ddKsgDTcWZyM5gpNC1iKL"
+  },
+  "44890229616403": {
+    "title": "Using an Enterprise Network (802.1x) with OptiSigns",
+    "slug": "using-an-enterprise-network-8021x-with-optisigns",
+    "updated_at": "2026-05-20T18:11:11Z",
+    "sha256": "9f8985ac0e28584b1ee1f42b056c470f1eea5d0ac721339ae97a712123593f82",
+    "file_id": "file-9kmqfQLVFyd24dMNrKRMEN"
+  },
+  "43657735780627": {
+    "title": "User Management Example - Chain Restaurant or Retail Store with Multiple Locations",
+    "slug": "user-management-example-chain-restaurant-or-retail-store-with-multiple-locations",
+    "updated_at": "2025-08-28T19:28:55Z",
+    "sha256": "6b558eddcd48d1a0a250c0d120cc1bdebee54f4071a476998aa769d9e1fb57eb",
+    "file_id": "file-5r6hBrgnXNf4aSU4VCLcW2"
+  },
+  "42087942047379": {
+    "title": "Getting Started with Designer",
+    "slug": "getting-started-with-designer",
+    "updated_at": "2025-10-07T17:18:32Z",
+    "sha256": "04314fdd2f39557923443c2940fa64778e792ac146165e63843418166b4f60fd",
+    "file_id": "file-GbByH9gfjrvmLwa9veswQj"
+  },
+  "41432385864595": {
+    "title": "Designer 2.0 New Features",
+    "slug": "designer-20-new-features",
+    "updated_at": "2026-05-12T14:17:09Z",
+    "sha256": "7c91ebefbb98a997ff047c62862176eed236073b9c404c08335efa7b4bb9c4c2",
+    "file_id": "file-MdmJjryEVFr9xhv3Nrgb6a"
+  },
+  "40736654972563": {
+    "title": "OptiSigns Pro/ProMax Player Troubleshooting Guide",
+    "slug": "optisigns-propromax-player-troubleshooting-guide",
+    "updated_at": "2026-01-13T21:20:16Z",
+    "sha256": "6cedd945687e35ec653c1c9e29702820b5ba9c2e19506c05625047b9856c2345",
+    "file_id": "file-92q41JtEY7VBLSQNDPgEVe"
+  },
+  "40671590645651": {
+    "title": "How to Play Licensed Background Music on Digital Signs with OptiSound",
+    "slug": "how-to-play-licensed-background-music-on-digital-signs-with-optisound",
+    "updated_at": "2026-04-08T22:33:37Z",
+    "sha256": "7ff0c66efe1bc28d673cb2e112399d94f4f7db6aa9529d0948e216339754e6e1",
+    "file_id": "file-MkHVNZb5Xy2ZmrBbE8gXac"
+  },
+  "40212027797523": {
+    "title": "Disk Encryption",
+    "slug": "disk-encryption",
+    "updated_at": "2025-09-04T16:19:23Z",
+    "sha256": "f84a8d827614387906b9fd589532487ec5d1ee8a27aa457f417d66a8ba6c20f2",
+    "file_id": "file-Y8tfRJ9tZ4tJnXHUdTgSKZ"
+  },
+  "40147900639891": {
+    "title": "OptiStick Troubleshooting Guide",
+    "slug": "optistick-troubleshooting-guide",
+    "updated_at": "2026-06-26T13:52:36Z",
+    "sha256": "3f8b9c6ec22b5c471c5a04c8bec49a1653a0663a468c894408b050b16d9bdc1f",
+    "file_id": "file-R5vFgQnJwJv5rePhHZPC6T"
+  },
+  "39488874989587": {
+    "title": "Fixing Unexpected Screen Rotation & Incorrect Orientation with OptiSigns Android Stick",
+    "slug": "fixing-unexpected-screen-rotation-incorrect-orientation-with-optisigns-android-stick",
+    "updated_at": "2025-09-04T15:25:54Z",
+    "sha256": "1035da8f3448a1e20e293c7ee5eabbfcd2cd53e66f7a351e06106a42bc3e1394",
+    "file_id": "file-GT1DaAc5T1StDVDyM9KkY7"
+  },
+  "39250660729747": {
+    "title": "How to Use the Tableau App",
+    "slug": "how-to-use-the-tableau-app",
+    "updated_at": "2026-01-06T22:36:49Z",
+    "sha256": "2fce80d21ebf88603ce234207508fddebf4c1f7ca59b6f3140f86393f06655b0",
+    "file_id": "file-Qjtn9kkzfwG41L2DQmGG9v"
+  },
+  "39080869746067": {
+    "title": "Handle OAuth Authentication using API Gateway Pre-request Configuration",
+    "slug": "handle-oauth-authentication-using-api-gateway-pre-request-configuration",
+    "updated_at": "2025-08-28T18:42:06Z",
+    "sha256": "1cada90322226c9053d51f69866c1a3afe8ec17a2854cfd0973043699b66c13b",
+    "file_id": "file-EBRhoCZjHL8jJ6UjwepR34"
+  },
+  "38062664690195": {
+    "title": "Tagging in OptiSigns",
+    "slug": "tagging-in-optisigns",
+    "updated_at": "2025-09-09T19:34:07Z",
+    "sha256": "04b30ad717606486cdd779048309d08c1b708b1253530a28648a72d3af9242fa",
+    "file_id": "file-MKkZq9z9xVDmtzTrhURfLN"
+  },
+  "37966066335891": {
+    "title": "Getting Started with an OptiSigns Free Trial",
+    "slug": "getting-started-with-an-optisigns-free-trial",
+    "updated_at": "2025-09-04T18:44:24Z",
+    "sha256": "20c2849995e65f5ec2176f1a94a4f4bbbc3b650859234fc81daa864fb4c1d0f3",
+    "file_id": "file-6qUapD21EaG1jf64nAH34a"
+  },
+  "36911639377683": {
+    "title": "How to Use OptiSigns with Microsoft Teams Rooms",
+    "slug": "how-to-use-optisigns-with-microsoft-teams-rooms",
+    "updated_at": "2025-09-04T18:42:32Z",
+    "sha256": "1125fa02557c17f50f8d2f38d6c9aee61c0377687ece557e159520072552648f",
+    "file_id": "file-RExktUE2uJEsgwKGrxuxk3"
+  },
+  "36501302096915": {
+    "title": "How to access the Troubleshooting page of the OptiSigns Player",
+    "slug": "how-to-access-the-troubleshooting-page-of-the-optisigns-player",
+    "updated_at": "2025-09-02T20:08:24Z",
+    "sha256": "678b96f03ff05b186d6f3692d1eb94d8ce473b304f1bf8b169ac9f1a19a64900",
+    "file_id": "file-AEs5g77PdJwAvAYoxLWpM1"
+  }
+}
