@@ -122,9 +122,9 @@ def setup_knowledge_base(data_dir: str = "./data") -> Tuple[str, str]:
     
     # Persist IDs locally for easy execution in Phase 3 / Chat testing
     os.makedirs("./config", exist_ok=True)
-    with open("./config/optibot_config.txt", "w", encoding="utf-8") as f:
-        json.dump(config, f, indent = 2)
-    with open("./config/vector_store_id.txt", "w") as f:
+    with open("./config/optibot_config.json", "w", encoding="utf-8") as f:
+        json.dump(config, f, indent=2)
+    with open("./config/vector_store_id.txt", "w", encoding="utf-8") as f:
         f.write(vector_store.id)
 
     logger.info("Config saved to ./config/optibot_config.json")
