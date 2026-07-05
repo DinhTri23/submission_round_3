@@ -4,11 +4,10 @@ import glob
 import logging
 import math
 from typing import Tuple
-from dotenv import load_dotenv
 from openai import OpenAI
 import tiktoken
 
-load_dotenv()
+from env_utils import get_required_env
 
 logging.basicConfig(
     level=logging.INFO,
@@ -61,10 +60,7 @@ def estimate_local_chunks(file_paths: list[str], chunk_size: int, overlap: int) 
 
 def setup_knowledge_base(data_dir: str = "./data") -> Tuple[str, str]:
     """Provisions Vector Store, uploads files, and creates OptiBot."""
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError("CRITICAL: OPENAI_API_KEY is missing from environment.")
-
+    api_key = get_required_env("OPENAI_API_KEY")
     client = OpenAI(api_key=api_key)
     
     # 1. Gather files

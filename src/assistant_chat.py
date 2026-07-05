@@ -1,17 +1,15 @@
 import os
-import time
 import logging
-from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
+from env_utils import get_required_env
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
 def run_chat_session(query: str):
     """Executes a single test query against OptiBot."""
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(api_key=get_required_env("OPENAI_API_KEY"))
     
     if not os.path.exists("./config/assistant_id.txt"):
         raise FileNotFoundError("Assistant ID not found. Run assistant_setup.py first.")

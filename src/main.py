@@ -1,18 +1,18 @@
 import os
-import glob
+# import glob
 import json
 import hashlib
 import logging
 import time
 import functools
 from typing import Dict, Any, Callable, Optional, Set
-from dotenv import load_dotenv
 from openai import OpenAI, APIError, APIConnectionError, RateLimitError
 
 from scraper import HelpCenterScraper
 from utils import save_to_markdown, slugify
+from env_utils import get_required_env
 
-load_dotenv()
+get_required_env("OPENAI_API_KEY")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -291,10 +291,7 @@ def run_daily_sync() -> Dict[str, int]:
     """Executes the incremental daily sync job. Returns the run's stats dict."""
     logger.info("Starting OptiBot Daily Synchronization Job...")
 
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError("CRITICAL: OPENAI_API_KEY is missing from environment.")
-
+    api_key = get_required_env("OPENAI_API_KEY")
     client = OpenAI(api_key=api_key)
     vector_store_id = get_vector_store_id()
     sync_state = load_sync_state()
