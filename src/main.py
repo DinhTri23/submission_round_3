@@ -128,9 +128,14 @@ def save_sync_state(state: Dict[str, Dict[str, Any]]) -> None:
 
 def get_vector_store_id() -> str:
     """
-    Reads the vector store ID, preferring the current config format
-    (optibot_config.json) and falling back to the legacy plain-text file.
+    Reads the vector store ID from the environment first, then from the
+    persisted config files. This makes Railway deployments work even when
+    the local config files are absent in the container filesystem.
     """
+    env_vector_store_id = os.getenv("VECTOR_STORE_ID")
+    if env_vector_store_id:
+        return env_vector_store_id.strip()
+
     if os.path.exists(CONFIG_JSON_PATH):
         with open(CONFIG_JSON_PATH, "r", encoding="utf-8") as f:
             config = json.load(f)
@@ -145,8 +150,8 @@ def get_vector_store_id() -> str:
             return vector_store_id
 
     raise FileNotFoundError(
-        "Vector Store ID not found in optibot_config.json or vector_store_id.txt. "
-        "Run assistant_setup.py first."
+        "Vector Store ID not found in VECTOR_STORE_ID, optibot_config.json, or vector_store_id.txt. "
+        "Run assistant_setup.py locally first or set VECTOR_STORE_ID in Railway."
     )
 
 
