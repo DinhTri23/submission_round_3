@@ -24,7 +24,9 @@ logger = logging.getLogger(__name__)
 SYNC_STATE_PATH = "./config/sync_state.json"
 DATA_DIR = "./data"
 CONFIG_JSON_PATH = "./config/optibot_config.json"
+ALT_CONFIG_JSON_PATH = "./config/optibot_config.txt"
 LEGACY_VECTOR_STORE_PATH = "./config/vector_store_id.txt"
+DEFAULT_VECTOR_STORE_NAME = "OptiSigns Help Center Knowledge Base"
 
 # Retry tuning
 MAX_RETRIES = 4
@@ -126,33 +128,49 @@ def save_sync_state(state: Dict[str, Dict[str, Any]]) -> None:
     os.replace(tmp_path, SYNC_STATE_PATH)
 
 
-def get_vector_store_id() -> str:
+def get_vector_store_id(client: Optional[OpenAI] = None) -> str:
     """
     Reads the vector store ID from the environment first, then from the
-    persisted config files. This makes Railway deployments work even when
-    the local config files are absent in the container filesystem.
+    persisted config files. If none exists, a new vector store is created
+    automatically so Railway deployments do not fail on first run.
     """
     env_vector_store_id = os.getenv("VECTOR_STORE_ID")
     if env_vector_store_id:
         return env_vector_store_id.strip()
 
-    if os.path.exists(CONFIG_JSON_PATH):
-        with open(CONFIG_JSON_PATH, "r", encoding="utf-8") as f:
-            config = json.load(f)
-        vector_store_id = config.get("vector_store_id")
-        if vector_store_id:
-            return vector_store_id
+    for config_path in (CONFIG_JSON_PATH, ALT_CONFIG_JSON_PATH):
+        if os.path.exists(config_path):
+            with open(config_path, "r", encoding="utf-8") as f:
+                config = json.load(f)
+            vector_store_id = config.get("vector_store_id")
+            if vector_store_id:
+                return vector_store_id
 
     if os.path.exists(LEGACY_VECTOR_STORE_PATH):
-        with open(LEGACY_VECTOR_STORE_PATH, "r") as f:
+        with open(LEGACY_VECTOR_STORE_PATH, "r", encoding="utf-8") as f:
             vector_store_id = f.read().strip()
         if vector_store_id:
             return vector_store_id
 
-    raise FileNotFoundError(
-        "Vector Store ID not found in VECTOR_STORE_ID, optibot_config.json, or vector_store_id.txt. "
-        "Run assistant_setup.py locally first or set VECTOR_STORE_ID in Railway."
-    )
+    if client is None:
+        raise FileNotFoundError(
+            "Vector Store ID not found in VECTOR_STORE_ID, optibot_config.json, or vector_store_id.txt. "
+            "Run assistant_setup.py locally first or set VECTOR_STORE_ID in Railway."
+        )
+
+    logger.info("No vector store ID found. Creating a new vector store for this deployment...")
+    vector_store = client.vector_stores.create(name=DEFAULT_VECTOR_STORE_NAME)
+    vector_store_id = vector_store.id
+
+    os.makedirs(os.path.dirname(CONFIG_JSON_PATH), exist_ok=True)
+    with open(CONFIG_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump({"vector_store_id": vector_store_id}, f, indent=2)
+    with open(LEGACY_VECTOR_STORE_PATH, "w", encoding="utf-8") as f:
+        f.write(vector_store_id)
+
+    os.environ["VECTOR_STORE_ID"] = vector_store_id
+    logger.info(f"Created and persisted new vector store ID: {vector_store_id}")
+    return vector_store_id
 
 
 # --------------------------------------------------------------------------- #
@@ -298,7 +316,7 @@ def run_daily_sync() -> Dict[str, int]:
 
     api_key = get_required_env("OPENAI_API_KEY")
     client = OpenAI(api_key=api_key)
-    vector_store_id = get_vector_store_id()
+    vector_store_id = get_vector_store_id(client)
     sync_state = load_sync_state()
 
     stats = {"new": 0, "updated": 0, "skipped": 0, "failed": 0, "removed": 0}
